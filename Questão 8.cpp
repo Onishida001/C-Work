@@ -5,25 +5,16 @@
 #include <stdlib.h>
 
 int main() {
-    float md, n_m, sb;
+    float vlr, v_f;
 
-    printf("Digite a media atual do aluno: ");
-    scanf("%f", &md);
+    printf("Digite o valor do produto: R$ ");
+    scanf("%f", &vlr);
 
-    float soma = md + 5;
+    v_f = vlr * 0.90;
 
-    if (soma > 10) {
-        n_m = 10;
-        sb = soma - 10;
-    } else {
-        n_m = soma;
-        sb = 0;
-    }
-
-    printf("\n--------------- Media -----------------\n");
-    printf("Media original: %.1f\n", md);
-    printf("Nova media com 5 pontos extras: %.1f\n", n_m);
-    printf("Sobrou %.1f pontos para o proximo bimestre\n", sb);
+    printf("\n--- Preco com Desconto ---\n");
+    printf("Valor original do produto: R$ %.2f\n", vlr);
+    printf("Valor com 10%% de desconto: R$ %.2f\n", v_f);
     printf("\n");
 
     system("pause");
